@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initialscale=1">
+	<title>Acme</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<style>
+
+	@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTZS3E-kSBmtLoNJPDtbj2Pk.ttf) format('truetype');
+}
+
+	body {
+		font-family: 'Open Sans', sans-serif;
+		color: gray;
+		margin: 0 auto;
+
+		padding: 40px;
+
+	}
+
+	#logo {width: 192px; height: 88px;}
+
+	nav {margin: 0; }
+
+	nav ul{text-decoration: none;
+		font-weight: bold; text-transform: uppercase;
+		font-size: 18pt; margin: 0;
+		}
+
+	nav li{display: inline-block; padding-left: 20px; 
+		/* does not work */ vertical-align: bottom;
+		}
+
+	#clearline {clear:both;}
+
+	#anvil {display: block;  
+		text-align: center; margin: 20px 0 10px 0;}
+
+	h2 { font-size: 22pt; font-weight: lighter; text-transform: capitalize;}
+	p { font-weight: lighter; font-size: 10pt; line-height: 15pt;}
+
+	
+/* Media Query*/
+	/*780+40+40*/
+	@media (min-width: 860px){
+		body {max-width: 780px; }
+	#logo {display: inline-block; float: left;}
+	nav {display: inline-block; float: right;}
+	.article-left {display: inline-block; float: left;
+		width: 50%;}
+	}
+	.article-left h2{margin: 20px 20px 0 0;}
+	.article-left p{margin: 10px 20px 10px 0;}
+	.article-right {display: inline-block; float: right;width: 50%;}
+	.article-right h2{margin: 20px 0 0 20px;}
+	.article-right p{margin: 10px 0 10px 20px;}
+	}
+
+	@media (min-width: 500px) and (max-width: 860px){
+
+		body {max-width: 780px; }
+
+		#logo {display: block; float: none;}
+		#anvil {width: 90%;}
+		.article-left{display: block; float: none;width:100%;}
+		.article-left h2{margin: 20px 0 0 0;}
+		.article-left p{margin: 10px 0 10px 0;}
+		.article-right {display: block; float: none;width:100%;}
+		.article-right h2{margin: 20px 0 0 0;}
+		.article-right p{margin: 10px 0 10px 0;}
+	}
+
+	@media (min-width: 320px) and (max-width: 500px){
+		body {max-width: 420px; }
+		nav {display:block;
+			float: none; width: 100%;margin: 0;  }
+		nav li{display: block;float: left; 
+			padding-left: 0;
+		}
+
+	@media (max-width: 320px){
+
+		nav {display:block;
+			float: none; width: 100%;margin: 0;  }
+		nav li{display: block;float: left; 
+			padding-left: 0;
+		}
+
+		#logo {display: block; float: none;}
+
+		#anvil {display: none;}
+
+		.article-left{display: block; float: none;width:100%;}
+		.article-left h2{margin: 20px 0 0 0;}
+		.article-left p{margin: 10px 0 10px 0;}
+		.article-right {display: block; float: none;width:100%;}
+		.article-right h2{margin: 20px 0 0 0;}
+		.article-right p{margin: 10px 0 10px 0;}
+		}
+
+	
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="logo">
+		<img src="images/acme-logo.png" alt="acme-logo">
+	</div>
+
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>About Us</li>
+			<li>Contact</li>
+		</ul>
+	</nav>
+
+	<div id="clearline">
+	</div>
+
+	<div id="anvil">
+		<img src="images/anvil.png" alt="anvil">
+	</div>
+
+	<div id="main">
+
+	<div class="article-left">
+		<h2>Why acme?</h2>
+		<p>The review has not been made public, but members of Congress were briefed on it Thursday. An executive summary was obtained by The New York Times.The review of the Sept. 19 breach is part of a much broader investigation of the Secret Service being conducted by the deputy secretary of Homeland Security, Alejandro Mayorkas. That investigation is focused on other incidents in which the White House fence was scaled and how security at the White House could be improved. Ms. Pierson resigned after the September incident as well as other security lapses by the agency.
+		</p>
+	</div>
+
+	<div class="article-right">
+		<h2>anvils are not working</h2>
+		<p>The review has not been made public, but members of Congress were briefed on it Thursday. An executive summary was obtained by The New York Times.The review of the Sept. 19 breach is part of a much broader investigation of the Secret Service being conducted by the deputy secretary of Homeland Security, Alejandro Mayorkas. That investigation is focused on other incidents in which the White House fence was scaled and how security at the White House could be improved. Ms. Pierson resigned after the September incident as well as other security lapses by the agency.
+		</p>
+	</div>
+	</div>
+</body>
+</html>
