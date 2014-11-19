@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initialscale=1">
+	<title>Acme</title>
+
+	<link type="text/css" rel="stylesheet" href="css/normalize.css">
+	<style type="text/css">
+
+	@font-face {
+	  font-family: 'Open Sans';
+	  font-style: normal;
+	  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTZS3E-kSBmtLoNJPDtbj2Pk.ttf) format('truetype');
+		}
+
+	body {
+		font-family: 'Open Sans', sans-serif;
+		color: gray;
+		padding: 20px; 
+		max-width: 780px;
+		}
+
+	#logo img {width: 192px; height: 88px; 
+		display: block;	
+		}
+
+	nav {margin-top: 10px; 
+		padding: 0;
+		display: block; 
+		vertical-align: bottom;
+		}
+
+	nav ul{text-decoration: none;
+		font-weight: bold; 
+		text-transform: uppercase;
+		font-size: 22pt; 
+		margin: 0; padding: 0;
+		}
+
+	nav li{display: block; padding-right: 20px; 
+		margin: 10px 0 10px 0; padding: 0 20px 0 0; 
+		}
+
+	#clearline {clear:both;}
+
+	#anvil {display: none;}
+
+	h2 { font-size: 22pt; 
+		font-weight: lighter; 
+		text-transform: capitalize;
+		margin: 20px 0 0 0;
+		}
+
+	p { font-weight: lighter; 
+		font-size: 10pt; 
+		line-height: 15pt; 
+		margin: 0;
+		}
+
+/*revised Media Query 780+40+40*/
+	@media (min-width: 860px){
+
+		body {
+			margin: 0 auto;
+			padding: 40px; 
+			max-width: 780px;
+			}
+
+		#logo img{display: inline-block; 
+			}
+
+		nav {margin: 0; 
+			padding: 35px 0 0 0;
+			display: inline-block; 
+			float: right;
+			}
+
+		nav li{display: inline-block; 
+			padding-left: 10px;
+			}
+
+		#anvil {display: block;
+			margin-top: 20px;
+			}
+
+		.article-left {display: inline-block; float: left;
+				width: 50%;}
+	
+		.article-left h2{margin: 20px 20px 0 0;}
+		.article-left p{margin: 10px 20px 10px 0;}
+
+		.article-right {display: inline-block; float: right;width: 50%;}
+
+		.article-right h2{margin: 20px 0 0 20px;}
+		.article-right p{margin: 10px 0 10px 20px;}
+	}
+	
+
+	@media (min-width: 640px) and (max-width: 860px){
+
+		#logo {display: block; 
+		}
+		#anvil {display: block; margin-top: 20px;}
+		#anvil img{width: 100%;}
+
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="logo">
+		<img src="images/acme-logo.png" alt="acme-logo">
+
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>About Us</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<div id="clearline">
+	</div>
+
+	<div id="anvil">
+		<img src="images/anvil.png" alt="anvil">
+	</div>
+
+	<div id="main">
+
+		<div class="article-left">
+			<h2>Why acme?</h2>
+			<p>The review has not been made public, but members of Congress were briefed on it Thursday. An executive summary was obtained by The New York Times.The review of the Sept. 19 breach is part of a much broader investigation of the Secret Service being conducted by the deputy secretary of Homeland Security, Alejandro Mayorkas. That investigation is focused on other incidents in which the White House fence was scaled and how security at the White House could be improved. Ms. Pierson resigned after the September incident as well as other security lapses by the agency.
+			</p>
+		</div>
+
+		<div class="article-right">
+			<h2>anvils are not working</h2>
+			<p>The review has not been made public, but members of Congress were briefed on it Thursday. An executive summary was obtained by The New York Times.The review of the Sept. 19 breach is part of a much broader investigation of the Secret Service being conducted by the deputy secretary of Homeland Security, Alejandro Mayorkas. That investigation is focused on other incidents in which the White House fence was scaled and how security at the White House could be improved. Ms. Pierson resigned after the September incident as well as other security lapses by the agency.
+			</p>
+		</div>
+
+	</div>
+	
+</body>
+</html>
