@@ -1,0 +1,19 @@
+$font: DIN_Alternate_Bold;  
+
+@font-face {
+    font-family: "DIN_Alternate_Bold";
+    src: url('fonts/DIN_Alternate_Bold.ttf');
+    font-weight:400;
+}
+
+
+body { font-family: DIN_Alternate_Bold, sans-serif;}
+
+
+#headline { font-family: DIN_Alternate_Bold, sans-serif;
+
+  font-size: 59pt;}
+
+
+#sub-headline   { padding: 10px 0;
+  font-size: 24pt;}
